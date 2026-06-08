@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>iqqz logo mark dark</title>
+  <defs>
+    <linearGradient id="ribbon" x1="86" y1="78" x2="428" y2="432" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2EF2C4"/>
+      <stop offset="0.46" stop-color="#35C2FF"/>
+      <stop offset="0.78" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#FF5E7E"/>
+    </linearGradient>
+    <filter id="shadow" x="22" y="34" width="468" height="468" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="28" stdDeviation="26" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="#071827"/>
+  <g filter="url(#shadow)">
+    <rect x="72" y="72" width="368" height="368" rx="96" fill="#0B2235"/>
+    <path d="M156 247C156 186.801 204.801 138 265 138H286C346.199 138 395 186.801 395 247C395 307.199 346.199 356 286 356H263L202 417V351.989C174.135 331.245 156 293.803 156 247Z" stroke="url(#ribbon)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M238 245C238 219.595 258.595 199 284 199H293C318.405 199 339 219.595 339 245C339 270.405 318.405 291 293 291H279V339" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="196" cy="247" r="15" fill="#FFFFFF"/>
+    <circle cx="369" cy="247" r="15" fill="#FFFFFF"/>
+  </g>
+</svg>
