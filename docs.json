@@ -30,6 +30,9 @@
             "pages": [
               "index",
               "guide/quickstart",
+              "guide/register",
+              "guide/sign-in",
+              "guide/recover-password",
               "guide/account",
               "guide/operations",
               "guide/faq"
@@ -45,6 +48,9 @@
             "pages": [
               "en/index",
               "en/guide/quickstart",
+              "en/guide/register",
+              "en/guide/sign-in",
+              "en/guide/recover-password",
               "en/guide/account",
               "en/guide/operations",
               "en/guide/faq"
