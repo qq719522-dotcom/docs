@@ -2,13 +2,23 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "iqqz Tutorials",
-  "favicon": "/iqqz-logo-mark.svg",
+  "favicon": "/favicon.ico",
   "logo": {
-    "light": "/iqqz-logo-primary.svg",
-    "dark": "/iqqz-logo-dark.svg"
+    "light": "/iqqz-logo-nav-light.png",
+    "dark": "/iqqz-logo-nav-dark.png"
   },
   "colors": {
     "primary": "#0ea5a4"
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://doc.iqqz.com",
+      "og:image": "/og-social.png",
+      "twitter:card": "summary_large_image"
+    }
+  },
+  "thumbnails": {
+    "background": "/og-social.png"
   },
   "navigation": {
     "languages": [
