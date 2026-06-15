@@ -1,0 +1,79 @@
+---
+title: "查询令牌用量"
+description: "查询该令牌总使用量"
+---
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/dashboard/billing/usage:
+    get:
+      summary: 查询令牌用量
+      deprecated: false
+      description: 查询该令牌总使用量
+      tags: []
+      parameters:
+        - name: start_date
+          in: query
+          description: 时间戳（ms）开始时间
+          required: false
+          example: '1716149437000'
+          schema:
+            type: string
+        - name: end_date
+          in: query
+          description: 时间戳（ms）截止时间
+          required: false
+          example: '1746517437000'
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  object:
+                    type: string
+                  total_usage:
+                    type: number
+                    title: 令牌用量
+                    description: total_usage /100  = 实际用量
+                required:
+                  - object
+                  - total_usage
+                x-apifox-orders:
+                  - object
+                  - total_usage
+              example:
+                object: list
+                total_usage: 695.9646
+          headers: {}
+          x-apifox-name: 成功
+      security:
+        - bearer: []
+      x-apifox-folder: ''
+      x-apifox-status: released
+      x-run-in-apifox: https://app.apifox.com/web/project/5076588/apis/api-253589607-run
+components:
+  schemas: {}
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+servers:
+  - url: https://api.iqqz.com
+    description: 线上
+security:
+  - bearer: []
+
+```
+

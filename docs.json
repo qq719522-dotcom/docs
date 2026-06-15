@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "iqqz Tutorials",
+  "name": "iqqz API 文档",
   "favicon": "/assets/favicon.ico",
   "logo": {
     "light": "/assets/iqqz-logo-nav-light.png",
@@ -29,31 +29,24 @@
             "group": "开始",
             "pages": [
               "index",
-              "guide/quickstart",
-              "guide/register",
-              "guide/sign-in",
-              "guide/recover-password",
-              "guide/account",
-              "guide/operations",
-              "guide/faq"
+              "vapi/5069242m0",
+              "vapi/5071665m0",
+              "vapi/5544907m0",
+              "vapi/7009817m0",
+              "vapi/7738964m0",
+              "vapi/8044225m0",
+              "vapi/8185128m0",
+              "vapi/8185131m0",
+              "vapi/9011159m0",
+              "vapi/9011336m0"
             ]
-          }
-        ]
-      },
-      {
-        "language": "en",
-        "groups": [
+          },
           {
-            "group": "Getting Started",
+            "group": "API 参考",
             "pages": [
-              "en/index",
-              "en/guide/quickstart",
-              "en/guide/register",
-              "en/guide/sign-in",
-              "en/guide/recover-password",
-              "en/guide/account",
-              "en/guide/operations",
-              "en/guide/faq"
+              "vapi/253589607e0",
+              "vapi/253589207e0",
+              "vapi/303002012e0"
             ]
           }
         ]
