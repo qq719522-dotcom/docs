@@ -3,7 +3,7 @@ title: "Claude Code最佳API配置教程指南"
 description: ""
 ---
 
-![c0.webp](https://api.apifox.com/api/v1/projects/5076588/resources/551969/image-preview)
+![c0.webp](/assets/vapi/551969.webp)
 
 Claude Code接入方法：
 
@@ -21,7 +21,7 @@ claude --version
 
 ## 三、ApiKey获取
 
-进入网站 https://api.v3.cm 进行注册并充值，然后在“令牌管理”页面，复制apikey，后续需要用它来接入Claude code。建议新建令牌->令牌分组选择：`claude_cc`分组，价格比较便宜。
+进入网站 https://api.iqqz.com 进行注册并充值，然后在“令牌管理”页面，复制apikey，后续需要用它来接入Claude code。建议新建令牌->令牌分组选择：`claude_cc`分组，价格比较便宜。
 
 ## 四、项目配置
 
@@ -51,7 +51,7 @@ claude --version
 ```json
 {
     "env": {
-      "ANTHROPIC_BASE_URL": "https://api.v3.cm",
+      "ANTHROPIC_BASE_URL": "https://api.iqqz.com",
       "ANTHROPIC_AUTH_TOKEN": "sk-xxxxx",
       "ANTHROPIC_MODEL": "claude-sonnet-4-6",
       "ANTHROPIC_SMALL_FAST_MODEL": "claude-haiku-4-5-20251001",
@@ -121,23 +121,23 @@ vi   ~/.claude/settings.json
 
 Claude Code在运行时会优先阅读该文件，这非常有助于Claude快速理解我们的项目。
 
-![c1.webp](https://api.apifox.com/api/v1/projects/5076588/resources/551961/image-preview)
+![c1.webp](/assets/vapi/551961.webp)
 
 ### 文件权限控制
 
 
-![c2.webp](https://api.apifox.com/api/v1/projects/5076588/resources/551962/image-preview)
+![c2.webp](/assets/vapi/551962.webp)
 
 ### 上下文管理
 
 上下文快满时 右下角有提示，通过 `/clear` 和 `/compact` 命令控制上下文。
 
-![c3.webp](https://api.apifox.com/api/v1/projects/5076588/resources/551964/image-preview)
+![c3.webp](/assets/vapi/551964.webp)
 
 ### 高级技巧
 
 
-![c4.webp](https://api.apifox.com/api/v1/projects/5076588/resources/551965/image-preview)
+![c4.webp](/assets/vapi/551965.webp)
 
 ## 六、常见问题
 
