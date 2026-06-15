@@ -1,0 +1,86 @@
+---
+title: "查询令牌限额"
+description: "通过该接口查询令牌key的授权额度（限额），如果令牌设置为 `无限额度` 则查询结果是100000000"
+---
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/dashboard/billing/subscription:
+    get:
+      summary: 查询令牌限额
+      deprecated: false
+      description: |-
+        通过该接口查询令牌key的授权额度（限额），如果令牌设置为 `无限额度` 则查询结果是100000000
+
+        注意：令牌的授权额度一旦修改之后，授权额度（限制额度）将会在上次额度之上进行不断累加。
+      tags: []
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  object:
+                    type: string
+                  has_payment_method:
+                    type: boolean
+                  soft_limit_usd:
+                    type: integer
+                  hard_limit_usd:
+                    type: integer
+                  system_hard_limit_usd:
+                    type: integer
+                  access_until:
+                    type: integer
+                required:
+                  - object
+                  - has_payment_method
+                  - soft_limit_usd
+                  - hard_limit_usd
+                  - system_hard_limit_usd
+                  - access_until
+                x-apifox-orders:
+                  - object
+                  - has_payment_method
+                  - soft_limit_usd
+                  - hard_limit_usd
+                  - system_hard_limit_usd
+                  - access_until
+              example:
+                object: billing_subscription
+                has_payment_method: true
+                soft_limit_usd: 5
+                hard_limit_usd: 5
+                system_hard_limit_usd: 5
+                access_until: 0
+          headers: {}
+          x-apifox-name: 成功
+      security:
+        - bearer: []
+      x-apifox-folder: ''
+      x-apifox-status: released
+      x-run-in-apifox: https://app.apifox.com/web/project/5076588/apis/api-253589207-run
+components:
+  schemas: {}
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+servers:
+  - url: https://api.iqqz.com
+    description: 线上
+security:
+  - bearer: []
+
+```
+

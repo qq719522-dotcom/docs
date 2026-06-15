@@ -29,24 +29,24 @@
             "group": "开始",
             "pages": [
               "index",
-              "vapi/5069242m0",
-              "vapi/5071665m0",
-              "vapi/5544907m0",
-              "vapi/7009817m0",
-              "vapi/7738964m0",
-              "vapi/8044225m0",
-              "vapi/8185128m0",
-              "vapi/8185131m0",
-              "vapi/9011159m0",
-              "vapi/9011336m0"
+              "vapi/model-compatibility",
+              "vapi/openai-sdk-guide",
+              "vapi/high-concurrency-batch-requests",
+              "vapi/claude-code-api-guide",
+              "vapi/openai-codex-api-guide",
+              "vapi/gemini-cli-api-guide",
+              "vapi/openclaw-api-guide",
+              "vapi/opencode-api-guide",
+              "vapi/trae-api-guide",
+              "vapi/cc-switch-api-guide"
             ]
           },
           {
             "group": "API 参考",
             "pages": [
-              "vapi/253589607e0",
-              "vapi/253589207e0",
-              "vapi/303002012e0"
+              "vapi/token-usage",
+              "vapi/token-quota",
+              "vapi/account-info"
             ]
           }
         ]

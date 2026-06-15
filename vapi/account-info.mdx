@@ -1,0 +1,209 @@
+---
+title: "查询账户信息"
+description: "通过该接口查询账户的具体信息。"
+---
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /api/user/self:
+    get:
+      summary: 查询账户信息
+      deprecated: false
+      description: |-
+        通过该接口查询账户的具体信息。
+        包括：剩余额度、已用额度、总请求次数等等
+      tags: []
+      parameters:
+        - name: X-Api-User
+          in: header
+          description: 用户数字ID编号，可在网站个人中心查看
+          required: false
+          example: 0
+          schema:
+            type: integer
+        - name: Authorization
+          in: header
+          description: 系统访问令牌，可在网站个人中心获取
+          required: false
+          example: Bearer 123456xxx
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                      username:
+                        type: string
+                      password:
+                        type: string
+                      display_name:
+                        type: string
+                      role:
+                        type: integer
+                      status:
+                        type: integer
+                      email:
+                        type: string
+                      github_id:
+                        type: string
+                      wechat_id:
+                        type: string
+                      oidc_id:
+                        type: string
+                      google_id:
+                        type: string
+                      verification_code:
+                        type: string
+                      access_token:
+                        type: 'null'
+                      quota:
+                        type: integer
+                        title: 剩余额度
+                        description: 该额度除以 500000 既为实际额度
+                      used_quota:
+                        type: integer
+                        title: 已用额度
+                        description: 该额度除以 500000 既为实际额度
+                      request_count:
+                        type: integer
+                        title: 总请求次数
+                      group:
+                        type: string
+                        title: 用户分组
+                      can_use_self_group:
+                        type: boolean
+                      aff_code:
+                        type: string
+                        title: Aff邀请ID
+                      inviter_id:
+                        type: integer
+                      aff_count:
+                        type: integer
+                        title: 邀请次数
+                      aff_quota:
+                        type: integer
+                        title: 邀请奖励额度
+                      aff_history_quota:
+                        type: integer
+                        title: 历史邀请奖励额度
+                      created_at:
+                        type: integer
+                      last_login_at:
+                        type: integer
+                      last_login_ip:
+                        type: string
+                      deleted_at:
+                        type: 'null'
+                      group_ratio:
+                        type: integer
+                      topup_ratio:
+                        type: integer
+                    required:
+                      - id
+                      - username
+                      - password
+                      - display_name
+                      - role
+                      - status
+                      - email
+                      - github_id
+                      - wechat_id
+                      - oidc_id
+                      - google_id
+                      - verification_code
+                      - access_token
+                      - quota
+                      - used_quota
+                      - request_count
+                      - group
+                      - can_use_self_group
+                      - aff_code
+                      - inviter_id
+                      - aff_count
+                      - aff_quota
+                      - aff_history_quota
+                      - created_at
+                      - last_login_at
+                      - last_login_ip
+                      - deleted_at
+                      - group_ratio
+                      - topup_ratio
+                    x-apifox-orders:
+                      - id
+                      - username
+                      - password
+                      - display_name
+                      - role
+                      - status
+                      - email
+                      - github_id
+                      - wechat_id
+                      - oidc_id
+                      - google_id
+                      - verification_code
+                      - access_token
+                      - quota
+                      - used_quota
+                      - request_count
+                      - group
+                      - can_use_self_group
+                      - aff_code
+                      - inviter_id
+                      - aff_count
+                      - aff_quota
+                      - aff_history_quota
+                      - created_at
+                      - last_login_at
+                      - last_login_ip
+                      - deleted_at
+                      - group_ratio
+                      - topup_ratio
+                  message:
+                    type: string
+                  success:
+                    type: boolean
+                required:
+                  - data
+                  - message
+                  - success
+                x-apifox-orders:
+                  - data
+                  - message
+                  - success
+          headers: {}
+          x-apifox-name: 成功
+      security:
+        - bearer: []
+      x-apifox-folder: ''
+      x-apifox-status: released
+      x-run-in-apifox: https://app.apifox.com/web/project/5076588/apis/api-303002012-run
+components:
+  schemas: {}
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+servers:
+  - url: https://api.iqqz.com
+    description: 线上
+security:
+  - bearer: []
+
+```
+
