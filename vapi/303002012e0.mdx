@@ -1,6 +1,6 @@
 ---
 title: "查询账户信息"
-description: "通过该接口查询账户的具体信息。"
+description: "通过该接口查询账户的具体信息�?
 ---
 
 ## OpenAPI Specification
@@ -17,21 +17,17 @@ paths:
       summary: 查询账户信息
       deprecated: false
       description: |-
-        通过该接口查询账户的具体信息。
-        包括：剩余额度、已用额度、总请求次数等等
-      tags: []
+        通过该接口查询账户的具体信息�?        包括：剩余额度、已用额度、总请求次数等�?      tags: []
       parameters:
         - name: X-Api-User
           in: header
-          description: 用户数字ID编号，可在网站个人中心查看
-          required: false
+          description: 用户数字ID编号，可在网站个人中心查�?          required: false
           example: 0
           schema:
             type: integer
         - name: Authorization
           in: header
-          description: 系统访问令牌，可在网站个人中心获取
-          required: false
+          description: 系统访问令牌，可在网站个人中心获�?          required: false
           example: Bearer 123456xxx
           schema:
             type: string
@@ -75,15 +71,14 @@ paths:
                       quota:
                         type: integer
                         title: 剩余额度
-                        description: 该额度除以 500000 既为实际额度
+                        description: 该额度除�?500000 既为实际额度
                       used_quota:
                         type: integer
                         title: 已用额度
-                        description: 该额度除以 500000 既为实际额度
+                        description: 该额度除�?500000 既为实际额度
                       request_count:
                         type: integer
-                        title: 总请求次数
-                      group:
+                        title: 总请求次�?                      group:
                         type: string
                         title: 用户分组
                       can_use_self_group:
@@ -95,14 +90,11 @@ paths:
                         type: integer
                       aff_count:
                         type: integer
-                        title: 邀请次数
-                      aff_quota:
+                        title: 邀请次�?                      aff_quota:
                         type: integer
-                        title: 邀请奖励额度
-                      aff_history_quota:
+                        title: 邀请奖励额�?                      aff_history_quota:
                         type: integer
-                        title: 历史邀请奖励额度
-                      created_at:
+                        title: 历史邀请奖励额�?                      created_at:
                         type: integer
                       last_login_at:
                         type: integer
@@ -192,7 +184,6 @@ paths:
         - bearer: []
       x-apifox-folder: ''
       x-apifox-status: released
-      x-run-in-apifox: https://app.apifox.com/web/project/5076588/apis/api-303002012-run
 components:
   schemas: {}
   securitySchemes:
